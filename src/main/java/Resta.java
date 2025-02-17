@@ -65,11 +65,12 @@ public class Resta {
                     System.out.println("Resta con valor acumulado");
                     break;
                 case 5:
-                    //Modulo.menu();
+                    Menu.Calculadora();
                     System.out.println("Volver al menu principal");
                     break;
+
             }
-        }while(opcion != 5);
+        }while(opcion != 6);
         System.out.println("Fin del programa");
     }
 
@@ -100,7 +101,8 @@ public class Resta {
         System.out.println("2. Resta de dos numeros enteros");
         System.out.println("3. Resta de tres numeros reales");
         System.out.println("4. Resta con valor acumulado");
-        System.out.println("5. salir al menu princial");
+        System.out.println("5. salir al menu principal");
+
 
         opcion = leer.nextInt();
 

@@ -119,7 +119,7 @@ public class Producto {
                 case 5:
                     //Volver
                     System.out.println("Volver");
-                    Menu.pintarMenu();
+                    Menu.Calculadora();
                 case 6:
                     //Fin del programa
                     System.out.println("Fin del programa");

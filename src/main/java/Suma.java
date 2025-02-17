@@ -103,9 +103,9 @@ public class Suma {
             System.out.println("Número incorrecto. Elige una opción del 0 al 4.");
             escribirMenu();
         }
-        /*if (opcion == 0) {
-            Menu.llamarMenu();
-        }*/
+        if (opcion == 0) {
+            Menu.Calculadora();
+        }
         switch (opcion) {
             case 1:
                 System.out.println("Introduce los dos reales que quieres sumar: ");

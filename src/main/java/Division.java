@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 public class Division {
 
-    public class OperacionesDivicion {
+
 
         private static Scanner leer = new Scanner(System.in);
 
-        public static void main(String[] args) {
+        public static void menuDivision() {
             int opcion =0;
 
             do {
@@ -28,9 +28,10 @@ public class Division {
                     case 4:
                         calcularRaiz4();
                         break;
+                    case 5: Menu.Calculadora();
                 }
 
-            }while(opcion !=4);
+            }while(opcion !=5);
 
             System.out.println(" Fin de proceso");
 
@@ -120,4 +121,4 @@ public class Division {
 
 
 
-}
+

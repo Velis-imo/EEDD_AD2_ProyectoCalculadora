@@ -1,4 +1,4 @@
-<import java.util.Scanner;
+import java.util.Scanner;
 /**
  * Clase principal de una Calculadora Básica que proporciona una interfaz de menú
  * para realizar operaciones matemáticas fundamentales.
@@ -44,8 +44,8 @@
  * @version 1.0.
  * @see Suma
  * @see Resta
- * @see //Multiplicacion
- * @see //Division
+ * @see Producto
+ * @see Division
  * @see //Modulo
  */
 public class Menu {
@@ -79,39 +79,8 @@ public class Menu {
      * </p>
      */
     public static void main(String[] args) {
+            Calculadora();
 
-        int opcion;
-        do {
-            opcion = pintarMenu();
-            switch(opcion)  {
-                case 1:
-                    // Opción de Suma
-                    System.out.println("Procesar Suma");
-                    break;
-                case 2:
-                    // Llamada al menú de Resta
-                    Resta.menuResta();
-                    break;
-                case 3:
-                    // Opción de Multiplicación
-                    System.out.println("Procesar Multiplicar");
-                    break;
-                case 4:
-                    // Opción de División
-                    System.out.println("Procesar Dividir");
-                    break;
-                case 5:
-                    // Opción de Módulo
-                    System.out.println("Procesar Modulo");
-                    break;
-            }
-
-        }while(opcion != 6);
-        // Mensaje de finalización del programa
-        System.out.println("Fin del programa");
-
-        // Cierre del Scanner
-        leer.close();
     }
 
     /**
@@ -158,6 +127,43 @@ public class Menu {
         }
 
         return opcion;
+    }
+
+    public static void Calculadora()    {
+        int opcion;
+        do {
+            opcion = pintarMenu();
+            switch(opcion)  {
+                case 1:
+                    Suma.menu();
+                    break;
+                case 2:
+                    // Llamada al menú de Resta
+                    Resta.menuResta();
+                    break;
+                case 3:
+                    // Opción de Multiplicación
+                    Producto.productoMenu();
+                    break;
+                case 4:
+                    // Opción de División
+                    Division.menuDivision();
+                    break;
+                case 5:
+                    // Opción de Módulo
+                    System.out.println("Clase en construccion");
+                    break;
+                case 6: //Fin de Programa
+                    System.out.println("Fin Del Programa");
+            }
+
+        }while(opcion != 6);
+        // Mensaje de finalización del programa
+        System.out.println("Fin del programa");
+
+        // Cierre del Scanner
+        leer.close();
+
     }
 }
 
