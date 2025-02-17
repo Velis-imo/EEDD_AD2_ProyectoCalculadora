@@ -1,4 +1,4 @@
-import java.util.Scanner;
+<import java.util.Scanner;
 /**
  * Clase principal de una Calculadora Básica que proporciona una interfaz de menú
  * para realizar operaciones matemáticas fundamentales.
@@ -42,7 +42,7 @@ import java.util.Scanner;
  * @author Miduel del Castillo
  *
  * @version 1.0.
- * @see //Suma
+ * @see Suma
  * @see Resta
  * @see //Multiplicacion
  * @see //Division
