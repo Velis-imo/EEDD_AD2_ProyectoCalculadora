@@ -1,4 +1,4 @@
-//import test.Menu;
+package calculadora;//import test.calculadora.Menu;
 
 import java.util.Scanner;
 
@@ -80,7 +80,7 @@ public class Suma {
     }
 
     /**
-     * Método que ejecuta el menú de la clase Suma. Éste llama
+     * Método que ejecuta el menú de la clase calculadora.Suma. Éste llama
      * al método escribirmenu() para mostrar las opciones.
      * Después, lee con Scanner la opción elegida y llama al método correspondiente.
      * Finalmente, se llama a sí mismo (llamada recursiva).

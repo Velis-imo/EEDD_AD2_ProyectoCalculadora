@@ -1,3 +1,5 @@
+package calculadora;
+
 import java.util.Scanner;
 
 /**
@@ -7,7 +9,7 @@ import java.util.Scanner;
  *
  * <p>La clase ofrece las siguientes operaciones:</p>
  * <ul>
- *   <li> 1. Resta de dos números reales</li>
+ *   <li> 1. calculadora.Resta de dos números reales</li>
  *   <li> 5. Salir</li>
  * </ul>
  *
@@ -36,10 +38,10 @@ public class Resta {
          *
          * <p>Las opciones disponibles son:</p>
          * <ol>
-         *   <li> 1. Resta de dos números reales</li>
-         *   <li> 2. Resta de dos números enteros</li>
-         *   <li> 3. Resta de tres números reales</li>
-         *   <li> 4. Resta con valor acumulado</li>
+         *   <li> 1. calculadora.Resta de dos números reales</li>
+         *   <li> 2. calculadora.Resta de dos números enteros</li>
+         *   <li> 3. calculadora.Resta de tres números reales</li>
+         *   <li> 4. calculadora.Resta con valor acumulado</li>
          *   <li> 5. Salir al menú principal</li>
          * </ol>
          *
@@ -62,7 +64,7 @@ public class Resta {
                     break;
                 case 4:
                     Resta.restaAcumulada();
-                    System.out.println("Resta con valor acumulado");
+                    System.out.println("calculadora.Resta con valor acumulado");
                     break;
                 case 5:
                     Menu.Calculadora();
@@ -97,10 +99,10 @@ public class Resta {
      */
     public static int menu()    {
         int opcion;
-        System.out.println("1. Resta de dos numeros reales");
-        System.out.println("2. Resta de dos numeros enteros");
-        System.out.println("3. Resta de tres numeros reales");
-        System.out.println("4. Resta con valor acumulado");
+        System.out.println("1. calculadora.Resta de dos numeros reales");
+        System.out.println("2. calculadora.Resta de dos numeros enteros");
+        System.out.println("3. calculadora.Resta de tres numeros reales");
+        System.out.println("4. calculadora.Resta con valor acumulado");
         System.out.println("5. salir al menu principal");
 
 

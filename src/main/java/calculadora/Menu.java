@@ -1,3 +1,5 @@
+package calculadora;
+
 import java.util.Scanner;
 /**
  * Clase principal de una Calculadora Básica que proporciona una interfaz de menú
@@ -5,8 +7,8 @@ import java.util.Scanner;
  *
  * <p>Esta aplicación permite al usuario realizar las siguientes operaciones:
  * <ul>
- *   <li>Suma</li>
- *   <li>Resta</li>
+ *   <li>calculadora.Suma</li>
+ *   <li>calculadora.Resta</li>
  *   <li>Multiplicación</li>
  *   <li>División</li>
  *   <li>Módulo</li>
@@ -24,7 +26,7 @@ import java.util.Scanner;
  * <h2>Ejemplo de Uso</h2>
  * <pre>
  * // Ejecutar la calculadora
- * java calculadora.Menu
+ * java calculadora.calculadora.Menu
  *
  * // Seleccionar una opción del menú
  * 1. Sumar
@@ -138,7 +140,7 @@ public class Menu {
                     Suma.menu();
                     break;
                 case 2:
-                    // Llamada al menú de Resta
+                    // Llamada al menú de calculadora.Resta
                     Resta.menuResta();
                     break;
                 case 3:
