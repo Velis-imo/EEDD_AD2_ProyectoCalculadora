@@ -71,12 +71,12 @@ public class Suma {
      * Método que escribe las diferentes opciones del menú.
      */
     public static void escribirMenu (){
-        System.out.println("¿Que quieres hacer?");
+        System.out.println("Elige una opcion:");
         System.out.println("1. Sumar dos numeros reales");
         System.out.println("2. Sumar dos numeros enteros");
         System.out.println("3. Sumar tres numeros reales");
         System.out.println("4. Sumar con valor acumulado");
-        System.out.println("0. Salir al menu principal");
+        System.out.println("5. Salir al menu principal");
     }
 
     /**
@@ -91,7 +91,6 @@ public class Suma {
      * en un principio se leen los números como double, pero luego se realiza un redondeo con
      * Math.round y un casting a integer. De este modo, si, por ejemplo, se introduce un double 2,7
      * este se redondeará a 3 y se transformará en un int.
-     *
      */
     public static void menu() {
 
@@ -99,38 +98,32 @@ public class Suma {
         Scanner leerNumeros = new Scanner(System.in);
         int opcion = leerNumeros.nextInt();
 
-        /*if (opcion > 4 || opcion < 0) {
-            System.out.println("Número incorrecto. Elige una opción del 0 al 4.");
-            escribirMenu();
-        }
-        if (opcion == 0) {
-            Menu.Calculadora();
-        }*/
-        switch (opcion) {
+        while (opcion != 5) {
+            switch (opcion) {
 
-            case 0:
-                Menu.Calculadora();
-            case 1:
-                System.out.println("Introduce los dos reales que quieres sumar: ");
-                System.out.println(Suma.suma2reales(leerNumeros.nextDouble(), leerNumeros.nextDouble()));
-                break;
-            case 2:
-                System.out.println("Introduce los dos enteros que quieres sumar, si introduces numeros reales, se redondearan: ");
-                System.out.println(Suma.suma2enteros((int)Math.round(leerNumeros.nextDouble()), (int)Math.round(leerNumeros.nextDouble())));
-                break;
-            case 3:
-                System.out.println("Introduce los tres reales que quieres sumar: ");
-                System.out.println(Suma.suma3reales(leerNumeros.nextDouble(), leerNumeros.nextDouble(), leerNumeros.nextDouble()));
-                break;
-            case 4:
-                System.out.println("Has entrado en el modo suma acumulada, pulsa 0 para salir");
-                System.out.println(Suma.sumaAcumulativa());
-                break;
-            default:
-                System.out.println("Numero incorrecto. Elige una opcion del 0 al 4.");
+                case 1:
+                    System.out.println("Introduce los dos reales que quieres sumar: ");
+                    System.out.println(Suma.suma2reales(leerNumeros.nextDouble(), leerNumeros.nextDouble()));
+                    break;
+                case 2:
+                    System.out.println("Introduce los dos enteros que quieres sumar, si introduces numeros reales, se redondearan: ");
+                    System.out.println(Suma.suma2enteros((int) Math.round(leerNumeros.nextDouble()), (int) Math.round(leerNumeros.nextDouble())));
+                    break;
+                case 3:
+                    System.out.println("Introduce los tres reales que quieres sumar: ");
+                    System.out.println(Suma.suma3reales(leerNumeros.nextDouble(), leerNumeros.nextDouble(), leerNumeros.nextDouble()));
+                    break;
+                case 4:
+                    System.out.println("Has entrado en el modo suma acumulada, pulsa 0 para salir");
+                    System.out.println(Suma.sumaAcumulativa());
+                    break;
+                default:
+                    System.out.println("Numero incorrecto. Elige una opcion del 1 al 5.");
 
+            }
+            menu();
         }
-        menu();
+        Menu.Calculadora();
 
 
     }
