@@ -125,8 +125,10 @@ public class Resta {
      * Salida: 2.3
      * </pre>
      *
+     * @param a es el primer número real
+     * @param b es el segundo número real
+     * @return devuelve la resta de ambos números
      *
-     * @return double Resultado de la resta de los dos números reales
      *
      */
     public static double restaReales() {
@@ -153,8 +155,12 @@ public class Resta {
      * Salida: 6
      * </pre>
      *
-     * @return int Resultado de la resta de los dos números enteros
-     * @throws "Forarmato Erroneo" si el usuario introduce decimales.
+     * @param a es el primer número entero
+     * @param b es el segundo número entero
+     * @return devuelve la resta de ambos números
+     *
+
+
      */
     public static int restaEnteros() {
         System.out.println("Dame un numero");
@@ -180,6 +186,10 @@ public class Resta {
      * Salida: 5.0
      * </pre>
      *
+     * @param a es el primer número real
+     * @param b es el segundo número real
+     * @param c es el tercer numero real
+     * @return devuelve la resta de los tres números
      * @throws
      */
     public static double restaTresReales() {
@@ -217,8 +227,9 @@ public class Resta {
      * Resultado final: 50
      * </pre>
      *
-     * @return double Resultado final de la resta acumulada
-     * @throws
+     * @param a es el primer número real
+     * @param b es el segundo número real
+     * @return devuelve la resta acumulada
      */
     public static double restaAcumulada()  {
 
