@@ -1,11 +1,16 @@
 import java.util.Scanner;
 
-/** @author David Pozo (Github Darknegan)
+/**
+ * Esta clase contiene los siguientes métodos de producto de una calculadora:
+ * producto de 2 enteros, producto de 2 reales, producto de 3 reales y cálculo de potencias
+ * @author David Pozo (Github Darknegan)
  *
  */
 
 public class Producto {
-
+/**
+ * Creo todas las variables que vamos a necesitar y las defino
+ */
     private static Scanner leer = new Scanner(System.in);
 
     private static double a;
@@ -15,6 +20,9 @@ public class Producto {
     private static int f;
     private static int opcion;
 
+    /**
+     * Inicializo las variables
+     */
     static {
         a=0;
         b=0;
@@ -25,37 +33,59 @@ public class Producto {
     }
 
     /**Producto de dos números reales, tendrá 2 parámetros de entrada y uno de salida que será la
-         solución.*/
+     *  solución
+     * @param a es el primer número real
+     * @param b es el segundo número real
+     * @return devuelve el producto de ambos números
+     */
 
         public static double productoreales(double a, double b){
             return  a * b;
         }
 
 
-        /**Producto de dos números enteros, tendrá 2 parámetros de entrada y uno de salida que será la
-         solución.*/
+    /**Producto de dos números reales, tendrá 2 parámetros de entrada y uno de salida que será la
+     *  solución
+     * @param d es el primer número entero
+     * @param f es el segundo número entero
+     * @return devuelve el producto de ambos números
+     */
 
         public static int productoentero(int d, int f) {
                     return  d * f;
 
             }
 
-        /**Producto de tres números reales, tendrá 3 parámetros de entrada y uno de salida que será la
-         solución.*/
+    /**Producto de dos números reales, tendrá 2 parámetros de entrada y uno de salida que será la
+     *  solución
+     * @param a es el primer número real
+     * @param b es el segundo número real
+     * @param c es el tercer número real
+     * @return devuelve la solución del producto
+     */
 
         public static double productotres(double a, double b, double c) {
             return a * b * c;
 
         }
 
-        /** Potencia, tendrá dos parámetros de entrada (base y exponente) y uno de salida que será la solución*/
+        /** Potencia, tendrá dos parámetros de entrada (base y exponente) y uno de salida que será la solución
+         * @param a es la base de la potencia
+         * @param b es el exponente de la potencia
+         * @return devuelve el resultado de la potencia
+         * */
 
         public static double potencia(double a, double b) {
             return Math.pow(a,b);
     }
 
     /**
-     * Creo menú de la clase
+     * Método que ejecuta el menú del Producto . Éste llama
+     * al método productoMenu() para mostrar las opciones.
+     * Después, lee con Scanner la opción elegida y llama al método correspondiente.
+     * Finalmente, se llama a sí mismo (llamada recursiva).
+     * El bucle se termina cuando se selecciona la opción de salir o se vuelve al menu principal.
+     *
      */
 
     public static void productoMenu() {
@@ -72,6 +102,8 @@ public class Producto {
 
 
         opcion = leer.nextInt();
+
+
 
         if (opcion < 1 || opcion > 6) {
             System.out.println("Opción Incorrecta: teclea una opción del 1 al 6");
