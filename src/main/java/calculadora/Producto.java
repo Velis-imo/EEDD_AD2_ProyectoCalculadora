@@ -1,3 +1,5 @@
+package calculadora;
+
 import java.util.Scanner;
 
 /**
@@ -32,7 +34,7 @@ public class Producto {
         opcion=0;
     }
 
-    /**Producto de dos números reales, tendrá 2 parámetros de entrada y uno de salida que será la
+    /**calculadora.Producto de dos números reales, tendrá 2 parámetros de entrada y uno de salida que será la
      *  solución
      * @param a es el primer número real
      * @param b es el segundo número real
@@ -44,7 +46,7 @@ public class Producto {
         }
 
 
-    /**Producto de dos números reales, tendrá 2 parámetros de entrada y uno de salida que será la
+    /**calculadora.Producto de dos números reales, tendrá 2 parámetros de entrada y uno de salida que será la
      *  solución
      * @param d es el primer número entero
      * @param f es el segundo número entero
@@ -56,7 +58,7 @@ public class Producto {
 
             }
 
-    /**Producto de dos números reales, tendrá 2 parámetros de entrada y uno de salida que será la
+    /**calculadora.Producto de dos números reales, tendrá 2 parámetros de entrada y uno de salida que será la
      *  solución
      * @param a es el primer número real
      * @param b es el segundo número real
@@ -80,7 +82,7 @@ public class Producto {
     }
 
     /**
-     * Método que ejecuta el menú del Producto . Éste llama
+     * Método que ejecuta el menú del calculadora.Producto . Éste llama
      * al método productoMenu() para mostrar las opciones.
      * Después, lee con Scanner la opción elegida y llama al método correspondiente.
      * Finalmente, se llama a sí mismo (llamada recursiva).
@@ -91,9 +93,9 @@ public class Producto {
     public static void productoMenu() {
 
 
-        System.out.println("1. Producto de dos numeros reales");
-        System.out.println("2. Producto de dos numeros enteros");
-        System.out.println("3. Producto de tres numeros reales");
+        System.out.println("1. calculadora.Producto de dos numeros reales");
+        System.out.println("2. calculadora.Producto de dos numeros enteros");
+        System.out.println("3. calculadora.Producto de tres numeros reales");
         System.out.println("4. Potencia");
         System.out.println("5. Volver");
         System.out.println("6. Salir");
@@ -112,7 +114,7 @@ public class Producto {
         else {
             switch (opcion) {
                 case 1:
-                    //Producto de dos números reales
+                    //calculadora.Producto de dos números reales
                     System.out.println("Dame el primer número real: ");
                     a = leer.nextDouble();
                     System.out.println("Dame el segundo número real: ");
@@ -120,8 +122,8 @@ public class Producto {
                     System.out.println("\nEl resultado es: " + Producto.productoreales(a, b) + "\n");
                     Producto.productoMenu();
                 case 2:
-                    //Producto de dos números enteros
-                    System.out.println("Producto de dos números enteros");
+                    //calculadora.Producto de dos números enteros
+                    System.out.println("calculadora.Producto de dos números enteros");
                     System.out.println("Dame el primer número entero: ");
                     d = leer.nextInt();
                     System.out.println("Dame el segundo número entero: ");
@@ -129,8 +131,8 @@ public class Producto {
                     System.out.println("\nEl resultado es: " + Producto.productoentero(d, f) + "\n");
                     Producto.productoMenu();
                 case 3:
-                    //Producto de tres números reales
-                    System.out.println("Producto de tres números reales");
+                    //calculadora.Producto de tres números reales
+                    System.out.println("calculadora.Producto de tres números reales");
                     System.out.println("Dame el primer número real: ");
                     a = leer.nextDouble();
                     System.out.println("Dame el segundo número real: ");

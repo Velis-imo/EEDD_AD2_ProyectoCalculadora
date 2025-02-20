@@ -1,8 +1,10 @@
+package calculadora;
+
 import java.util.Scanner;
 
 /**
- *Esta clase contiene los siguientes métodos de Division de una calculadora:
- * Division de 2 Reakes, Division de 2 enteros, inverso de un numero real y Raiz cuadrada
+ *Esta clase contiene los siguientes métodos de calculadora.Division de una calculadora:
+ * calculadora.Division de 2 Reakes, calculadora.Division de 2 enteros, inverso de un numero real y Raiz cuadrada
  * @author Michael jordan telleria guadalajara (MichaelJTG)
  *
  */

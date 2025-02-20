@@ -1,4 +1,4 @@
-//import test.Menu;
+package calculadora;
 
 import java.util.Scanner;
 
@@ -6,13 +6,11 @@ import java.util.Scanner;
  * Esta clase contiene los siguientes métodos de suma de una calculadora:
  * suma de 2 enteros, suma de 2 reales, suma de 3 reales y suma acumulativa
  * @author Andrea Amado Lain (Github: Andrie42)
- *
  */
 public class Suma {
 
     /**
      * método para suma de 2 enteros
-     *
      * @param a es el primer número entero
      * @param b es el segundo número entero
      * @return devuelve la suma de ambos números
@@ -23,7 +21,6 @@ public class Suma {
 
     /**
      * método para sumar 2 números reales
-     *
      * @param a es el primer número real
      * @param b es el segundo número real
      * @return devuelve la suma de ambos
@@ -80,7 +77,7 @@ public class Suma {
     }
 
     /**
-     * Método que ejecuta el menú de la clase Suma. Éste llama
+     * Método que ejecuta el menú de la clase calculadora.Suma. Éste llama
      * al método escribirmenu() para mostrar las opciones.
      * Después, lee con Scanner la opción elegida y llama al método correspondiente.
      * Finalmente, se llama a sí mismo (llamada recursiva).
