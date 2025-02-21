@@ -2,20 +2,21 @@ package calculadora;
 
 import static org.junit.jupiter.api.Assertions.*;
 /**
- * Esta clase contiene los test de los métodos de la clase Producto
+ * Esta clase contiene los test de los métodos de la clase Producto.
  * @author Andrea Amado Lain (Github: Andrie42)
- * Link del repositorio compartido: https://github.com/Velis-imo/EEDD_AD2_ProyectoCalculadora.git
+ * <br><a href="https://github.com/Velis-imo/EEDD_AD2_ProyectoCalculadora.git">Link del repositorio compartido</a>
  */
 
 class ProductoTest {
 
 
     @org.junit.jupiter.api.BeforeEach
+    //@Disabled("Not implemented yet")
     void setUp() {
     }
 
     /**
-     * Test para probar el metodo productoReales() de la clase Producto.
+     * Test para probar el método productoReales() de la clase Producto.
      * Se prueban dos casos distintos.
      */
     @org.junit.jupiter.api.Test
@@ -29,7 +30,7 @@ class ProductoTest {
     }
 
     /**
-     * Test para probar el metodo productoEntero() de la clase Producto.
+     * Test para probar el método productoEntero() de la clase Producto.
      * Se prueban dos casos distintos.
      */
     @org.junit.jupiter.api.Test
@@ -43,7 +44,7 @@ class ProductoTest {
     }
 
     /**
-     * Test para probar el metodo productoTres() de la clase Producto.
+     * Test para probar el método productoTres() de la clase Producto.
      * Se prueban dos casos distintos.
      */
     @org.junit.jupiter.api.Test
@@ -57,7 +58,7 @@ class ProductoTest {
     }
 
     /**
-     * Test para probar el metodo potencia() de la clase Producto.
+     * Test para probar el método potencia() de la clase Producto.
      * Se prueban dos casos distintos.
      */
     @org.junit.jupiter.api.Test

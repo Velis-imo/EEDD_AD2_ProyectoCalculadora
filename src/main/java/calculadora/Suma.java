@@ -3,43 +3,43 @@ package calculadora;
 import java.util.Scanner;
 
 /**
- * Esta clase contiene los siguientes métodos de suma de una calculadora:
- * suma de 2 enteros, suma de 2 reales, suma de 3 reales y suma acumulativa
+ * <p>Esta clase contiene los siguientes métodos de suma de una calculadora:
+ * suma de 2 enteros, suma de 2 reales, suma de 3 reales y suma acumulativa.</p>
  * @author Andrea Amado Lain (Github: Andrie42)
- * Link del repositorio compartido: https://github.com/Velis-imo/EEDD_AD2_ProyectoCalculadora.git
+ * <br><a href="https://github.com/Velis-imo/EEDD_AD2_ProyectoCalculadora.git">Link del repositorio compartido</a>
  */
 public class Suma {
 
-    /** Scanner para leer los números a introducir por el usuario*/
+    /** Scanner para leer los números a introducir por el usuario.*/
     private static Scanner leer = new Scanner(System.in);
 
     /**
-     * Metodo para suma de 2 enteros
-     * @param a es el primer número entero
-     * @param b es el segundo número entero
-     * @return devuelve la suma de ambos números
+     * Método para suma de 2 enteros.
+     * @param a es el primer número entero.
+     * @param b es el segundo número entero.
+     * @return devuelve la suma de ambos números.
      */
     public static int suma2Enteros(int a, int b) {
         return a + b;
     }
 
     /**
-     * Metodo para sumar 2 números reales
-     * @param a es el primer número real
-     * @param b es el segundo número real
-     * @return devuelve la suma de ambos
+     * Método para sumar 2 números reales.
+     * @param a es el primer número real.
+     * @param b es el segundo número real.
+     * @return devuelve la suma de ambos.
      */
     public static double suma2Reales(double a, double b) {
         return a + b;
     }
 
     /**
-     * Metodo que suma 3 números reales
+     * Método que suma 3 números reales.
      *
-     * @param a es el primer número real
-     * @param b es el segundo número real
-     * @param c es el tercer número real
-     * @return devuelve la suma de los tres
+     * @param a es el primer número real.
+     * @param b es el segundo número real.
+     * @param c es el tercer número real.
+     * @return devuelve la suma de los tres.
      */
     public static double suma3Reales(double a, double b, double c) {
         return a + b + c;
@@ -47,11 +47,11 @@ public class Suma {
 
 
     /**
-     * Metodo para hacer una suma acumulada.
-     * Éste va sumando los números que recibe desde el
+     * Método para hacer una suma acumulada.
+     * Este va sumando los números que recibe desde el
      * Scanner y los va sumando. Sale del bucle cuando se suma 0.
      *
-     * @return devuelve el total de la suma acumulada
+     * @return devuelve el total de la suma acumulada.
      */
     public static double sumaAcumulativa() {
         double numero = leer.nextDouble();
@@ -68,7 +68,7 @@ public class Suma {
     }
 
     /**
-     * Metodo que escribe las diferentes opciones del menú.
+     * Método que escribe las diferentes opciones del menú.
      */
     public static void escribirMenu (){
         System.out.println("Elige una opcion:");
@@ -80,17 +80,16 @@ public class Suma {
     }
 
     /**
-     * Metodo que ejecuta el menú de la clase calculadora. Este llama
-     * al metodo escribirmenu() para mostrar las opciones.
-     * Después, lee con Scanner la opción elegida y llama al metodo correspondiente.
+     * <p>Método que ejecuta el menú de la clase calculadora. Este llama
+     * al método escribirmenu() para mostrar las opciones.
+     * Después, lee con Scanner la opción elegida y llama al método correspondiente.
      * Finalmente, se llama a sí mismo (llamada recursiva).
-     * El bucle se termina cuando se selecciona la opción de salir.
-     *
-     * Casos especiales:
+     * El bucle se termina cuando se selecciona la opción de salir.</p>
+     * <p>Casos especiales:
      * Para evitar los errores que aparecen si se introducen números reales en lugar de enteros,
      * en un principio se leen los números como double, pero luego se realiza un redondeo con
      * Math.round y un casting a integer. De este modo, si, por ejemplo, se introduce un double 2,7
-     * este se redondeará a 3 y se transformará en un int.
+     * este se redondeará a 3 y se transformará en un int.</p>
      */
     public static void menu() {
 
