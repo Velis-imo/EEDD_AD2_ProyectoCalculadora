@@ -17,7 +17,9 @@ class ProductoTest {
 
     /**
      * Test para probar el método productoReales() de la clase Producto.
-     * Se prueban dos casos distintos.
+     * Primero llama al método, introduciendo los parámetros a y b,
+     * y después comprueba con assertEquals que el resultado sea el esperado.
+     * <br>Se prueban dos casos distintos.
      */
     @org.junit.jupiter.api.Test
     void productoReales() {
@@ -31,7 +33,9 @@ class ProductoTest {
 
     /**
      * Test para probar el método productoEntero() de la clase Producto.
-     * Se prueban dos casos distintos.
+     * Primero llama al método, introduciendo los parámetros a y b,
+     * y después comprueba con assertEquals que el resultado sea el esperado.
+     * <br>Se prueban dos casos distintos.
      */
     @org.junit.jupiter.api.Test
     void productoEntero() {
@@ -45,7 +49,9 @@ class ProductoTest {
 
     /**
      * Test para probar el método productoTres() de la clase Producto.
-     * Se prueban dos casos distintos.
+     * Primero llama al método, introduciendo los parámetros a, b y c,
+     * y después comprueba con assertEquals que el resultado sea el esperado.
+     * <br>Se prueban dos casos distintos.
      */
     @org.junit.jupiter.api.Test
     void productoTres() {
@@ -59,7 +65,9 @@ class ProductoTest {
 
     /**
      * Test para probar el método potencia() de la clase Producto.
-     * Se prueban dos casos distintos.
+     * Primero llama al método, introduciendo los parámetros a y b,
+     * y después comprueba con assertEquals que el resultado sea el esperado.
+     * <br>Se prueban dos casos distintos.
      */
     @org.junit.jupiter.api.Test
     void potencia() {

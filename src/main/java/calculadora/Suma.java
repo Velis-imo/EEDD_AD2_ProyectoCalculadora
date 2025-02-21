@@ -86,7 +86,7 @@ public class Suma {
      * Finalmente, se llama a sí mismo (llamada recursiva).
      * El bucle se termina cuando se selecciona la opción de salir.</p>
      * <p>Casos especiales:
-     * Para evitar los errores que aparecen si se introducen números reales en lugar de enteros,
+     * <br>Para evitar los errores que aparecen si se introducen números reales en lugar de enteros,
      * en un principio se leen los números como double, pero luego se realiza un redondeo con
      * Math.round y un casting a integer. De este modo, si, por ejemplo, se introduce un double 2,7
      * este se redondeará a 3 y se transformará en un int.</p>
@@ -101,15 +101,15 @@ public class Suma {
 
                 case 1:
                     System.out.println("Introduce los dos reales que quieres sumar: ");
-                    System.out.println(Suma.suma2reales(leer.nextDouble(), leer.nextDouble()));
+                    System.out.println(Suma.suma2Reales(leer.nextDouble(), leer.nextDouble()));
                     break;
                 case 2:
                     System.out.println("Introduce los dos enteros que quieres sumar, si introduces numeros reales, se redondearan: ");
-                    System.out.println(Suma.suma2enteros((int) Math.round(leer.nextDouble()), (int) Math.round(leer.nextDouble())));
+                    System.out.println(Suma.suma2Enteros((int) Math.round(leer.nextDouble()), (int) Math.round(leer.nextDouble())));
                     break;
                 case 3:
                     System.out.println("Introduce los tres reales que quieres sumar: ");
-                    System.out.println(Suma.suma3reales(leer.nextDouble(), leer.nextDouble(), leer.nextDouble()));
+                    System.out.println(Suma.suma3Reales(leer.nextDouble(), leer.nextDouble(), leer.nextDouble()));
                     break;
                 case 4:
                     System.out.println("Has entrado en el modo suma acumulada, pulsa 0 para salir");
