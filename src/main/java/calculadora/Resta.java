@@ -54,17 +54,30 @@ public class Resta {
             opcion = menu();
             switch(opcion)  {
                 case 1:
-                    Resta.restaReales();
+                    System.out.println("Introduce el primer numero real");
+                    double a = leer.nextDouble();
+                    System.out.println("Introduce el segundo numero real");
+                    double b = leer.nextDouble();
+                    System.out.println("El Resultado es: " + restaReales(a,b));
                     break;
                 case 2:
-                    Resta.restaEnteros();
+                    System.out.println("Dame un numero entero");
+                    int c = leer.nextInt();
+                    System.out.println("Dame otro numero entero");
+                    int d = leer.nextInt();
+                    System.out.println("El Resultado es: " + restaEnteros(c,d));
                     break;
                 case 3:
-                    Resta.restaTresReales();
+                    System.out.println("dame un numero real");
+                    a = leer.nextInt();
+                    System.out.println("dame otro numero real");
+                    b = leer.nextInt();
+                    System.out.println("dame otro numero real");
+                    double e = leer.nextInt();
+                    System.out.println("El Resultado es: " + restaTresReales(a, b, e));
                     break;
                 case 4:
-                    Resta.restaAcumulada();
-                    System.out.println("calculadora.Resta con valor acumulado");
+                    System.out.println(Resta.restaAcumulada());
                     break;
                 case 5:
                     Menu.Calculadora();
@@ -133,15 +146,8 @@ public class Resta {
      *
      *
      */
-    public static double restaReales() {
-        System.out.println("Dame un numero");
-        double a = leer.nextDouble();
-
-        System.out.println("Dame otro numero");
-        double b = leer.nextDouble();
-        System.out.println("El Resultado es: " + (a-b));
+    public static double restaReales(double a, double b) {
         return a - b;
-
     }
 
 
@@ -157,22 +163,13 @@ public class Resta {
      * Salida: 6
      * </pre>
      *
-     * @param a es el primer número entero
-     * @param b es el segundo número entero
-     * @return devuelve la resta de ambos números
+     * @param c es el primer número entero
+     * @param d es el segundo número entero
+     * @return la resta de ambos numeros
      *
-
-
      */
-    public static int restaEnteros() {
-        System.out.println("Dame un numero");
-        int a = leer.nextInt();;
-
-        System.out.println("Dame otro numero");
-        int b = leer.nextInt();
-        System.out.println("El Resultado es: " + (a-b));
-        return a - b;
-
+    public static int restaEnteros(int c, int d) {
+        return c - d;
     }
 
 
@@ -190,24 +187,12 @@ public class Resta {
      *
      * @param a es el primer número real
      * @param b es el segundo número real
-     * @param c es el tercer numero real
+     * @param e es el tercer numero real
      * @return devuelve la resta de los tres números
      * @throws
      */
-    public static double restaTresReales() {
-
-        System.out.println("dame un numero");
-        double a = leer.nextInt();
-
-        System.out.println("dame otro numero");
-        double b = leer.nextInt();
-
-        System.out.println("dame otro numero");
-        double c = leer.nextInt();
-
-        System.out.println("El Resultado es: " + (a-b-c));
-        return a-b-c;
-
+    public static double restaTresReales(double a, double b, double e) {
+        return a-b-e;
     }
 
     /**
@@ -229,14 +214,14 @@ public class Resta {
      * Resultado final: 50
      * </pre>
      *
-     * @param a es el primer número real
-     * @param b es el segundo número real
+     * @param
+     * @param
      * @return devuelve la resta acumulada
      */
     public static double restaAcumulada()  {
+
         System.out.println("Método resta acumulada, pulsa 0 para salir");
         System.out.println("Dame un numero");
-
         double numeroLeido = leer.nextDouble();
         double restaAcumulada = numeroLeido;
 
