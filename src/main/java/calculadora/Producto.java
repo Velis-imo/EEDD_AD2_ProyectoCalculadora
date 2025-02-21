@@ -93,9 +93,9 @@ public class Producto {
     public static void productoMenu() {
 
 
-        System.out.println("1. calculadora.Producto de dos numeros reales");
-        System.out.println("2. calculadora.Producto de dos numeros enteros");
-        System.out.println("3. calculadora.Producto de tres numeros reales");
+        System.out.println("1. Producto de dos numeros reales");
+        System.out.println("2. Producto de dos numeros enteros");
+        System.out.println("3. Producto de tres numeros reales");
         System.out.println("4. Potencia");
         System.out.println("5. Volver");
         System.out.println("6. Salir");
