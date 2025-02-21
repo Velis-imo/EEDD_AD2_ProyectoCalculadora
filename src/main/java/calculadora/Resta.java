@@ -116,7 +116,7 @@ public class Resta {
     }
 
     /**
-     * El metod restareales, realiza la resta de dos números reales.
+     * El metodo restareales, realiza la resta de dos números reales.
      * Solicita al usuario dos números reales y calcula su diferencia.
      *
      * <p>Fórmula: resultado = a - b</p>

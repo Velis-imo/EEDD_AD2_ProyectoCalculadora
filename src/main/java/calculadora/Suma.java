@@ -1,4 +1,4 @@
-package calculadora;//import test.calculadora.Menu;
+package calculadora;
 
 import java.util.Scanner;
 
@@ -6,13 +6,14 @@ import java.util.Scanner;
  * Esta clase contiene los siguientes métodos de suma de una calculadora:
  * suma de 2 enteros, suma de 2 reales, suma de 3 reales y suma acumulativa
  * @author Andrea Amado Lain (Github: Andrie42)
- *
  */
 public class Suma {
 
+    /** Scanner para leer los números a introducir por el usuario*/
+    private static Scanner leer = new Scanner(System.in);
+
     /**
      * método para suma de 2 enteros
-     *
      * @param a es el primer número entero
      * @param b es el segundo número entero
      * @return devuelve la suma de ambos números
@@ -23,7 +24,6 @@ public class Suma {
 
     /**
      * método para sumar 2 números reales
-     *
      * @param a es el primer número real
      * @param b es el segundo número real
      * @return devuelve la suma de ambos
@@ -53,14 +53,13 @@ public class Suma {
      * @return devuelve el total de la suma acumulada
      */
     public static double sumaAcumulativa() {
-        Scanner sc = new Scanner(System.in);
-        double numero = sc.nextDouble();
+        double numero = leer.nextDouble();
         double sumaAcumulada = 0;
 
         do {
             sumaAcumulada += numero;
             System.out.println(sumaAcumulada);
-            numero = sc.nextDouble();
+            numero = leer.nextDouble();
         }
         while (numero != 0);
         return sumaAcumulada;
@@ -95,23 +94,22 @@ public class Suma {
     public static void menu() {
 
         escribirMenu();
-        Scanner leerNumeros = new Scanner(System.in);
-        int opcion = leerNumeros.nextInt();
+        int opcion = leer.nextInt();
 
         while (opcion != 5) {
             switch (opcion) {
 
                 case 1:
                     System.out.println("Introduce los dos reales que quieres sumar: ");
-                    System.out.println(Suma.suma2reales(leerNumeros.nextDouble(), leerNumeros.nextDouble()));
+                    System.out.println(Suma.suma2reales(leer.nextDouble(), leer.nextDouble()));
                     break;
                 case 2:
                     System.out.println("Introduce los dos enteros que quieres sumar, si introduces numeros reales, se redondearan: ");
-                    System.out.println(Suma.suma2enteros((int) Math.round(leerNumeros.nextDouble()), (int) Math.round(leerNumeros.nextDouble())));
+                    System.out.println(Suma.suma2enteros((int) Math.round(leer.nextDouble()), (int) Math.round(leer.nextDouble())));
                     break;
                 case 3:
                     System.out.println("Introduce los tres reales que quieres sumar: ");
-                    System.out.println(Suma.suma3reales(leerNumeros.nextDouble(), leerNumeros.nextDouble(), leerNumeros.nextDouble()));
+                    System.out.println(Suma.suma3reales(leer.nextDouble(), leer.nextDouble(), leer.nextDouble()));
                     break;
                 case 4:
                     System.out.println("Has entrado en el modo suma acumulada, pulsa 0 para salir");
