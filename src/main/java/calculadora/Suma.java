@@ -48,7 +48,7 @@ public class Suma {
 
     /**
      * Metodo para hacer una suma acumulada.
-     * Éste va sumando los números que recibe desde el
+     * Este va sumando los números que recibe desde el
      * Scanner y los va sumando. Sale del bucle cuando se suma 0.
      *
      * @return devuelve el total de la suma acumulada
@@ -102,15 +102,15 @@ public class Suma {
 
                 case 1:
                     System.out.println("Introduce los dos reales que quieres sumar: ");
-                    System.out.println(Suma.suma2reales(leer.nextDouble(), leer.nextDouble()));
+                    System.out.println(Suma.suma2Reales(leer.nextDouble(), leer.nextDouble()));
                     break;
                 case 2:
                     System.out.println("Introduce los dos enteros que quieres sumar, si introduces numeros reales, se redondearan: ");
-                    System.out.println(Suma.suma2enteros((int) Math.round(leer.nextDouble()), (int) Math.round(leer.nextDouble())));
+                    System.out.println(Suma.suma2Enteros((int) Math.round(leer.nextDouble()), (int) Math.round(leer.nextDouble())));
                     break;
                 case 3:
                     System.out.println("Introduce los tres reales que quieres sumar: ");
-                    System.out.println(Suma.suma3reales(leer.nextDouble(), leer.nextDouble(), leer.nextDouble()));
+                    System.out.println(Suma.suma3Reales(leer.nextDouble(), leer.nextDouble(), leer.nextDouble()));
                     break;
                 case 4:
                     System.out.println("Has entrado en el modo suma acumulada, pulsa 0 para salir");
