@@ -13,7 +13,7 @@ public class Suma {
     private static final Scanner leer = new Scanner(System.in);
 
     /**
-     * método para suma de 2 enteros
+     * Método para suma de 2 enteros
      * @param a es el primer número entero
      * @param b es el segundo número entero
      * @return devuelve la suma de ambos números
@@ -23,7 +23,7 @@ public class Suma {
     }
 
     /**
-     * método para sumar 2 números reales
+     * Método para sumar 2 números reales
      * @param a es el primer número real
      * @param b es el segundo número real
      * @return devuelve la suma de ambos
@@ -33,7 +33,7 @@ public class Suma {
     }
 
     /**
-     * método que suma 3 números reales
+     * Método que suma 3 números reales
      *
      * @param a es el primer número real
      * @param b es el segundo número real
