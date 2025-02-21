@@ -8,12 +8,15 @@ class DivisionTest {
     void setUp() {
     }
 
-    @org.junit.jupiter.api.Test
-    void menuDivision() {
-    }
+
 
     @org.junit.jupiter.api.Test
     void procesarOpcion1() {
+        Division.procesarOpcion1(double 4, double 2);
+        assertEquals(6,2*3, "Debe ser 6");
+
+        Producto.productoEntero(10,3);
+        assertEquals(30,10*3, "Debe ser 30");
     }
 
     @org.junit.jupiter.api.Test

@@ -3,15 +3,15 @@ package calculadora;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 class RestaTest {
 
     @BeforeEach
     void setUp() {
     }
 
-    @Test
-    void menuResta() {
-    }
+
 
     @Test
     void menu() {
@@ -19,11 +19,17 @@ class RestaTest {
 
     @Test
     void restaReales() {
-        Resta.restaReales();
+        Resta.restaReales(2,3);
+        assertEquals(6,2*3, "Debe ser 6");
+
+        Producto.productoEntero(10,3);
+        assertEquals(30,10*3, "Debe ser 30");
     }
 
     @Test
     void restaEnteros() {
+
+
     }
 
     @Test

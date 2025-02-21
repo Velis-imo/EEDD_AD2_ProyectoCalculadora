@@ -16,7 +16,7 @@ class SumaTest {
 
     @Test
     void suma2enteros() {
-        Suma.suma2enteros(2.5,5);
+        Suma.suma2enteros(2,5);
         assertEquals(4,2+2, "la suma debe ser 4");
     }
 

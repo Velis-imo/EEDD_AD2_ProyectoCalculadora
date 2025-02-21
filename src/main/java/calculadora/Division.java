@@ -118,11 +118,15 @@ public class Division {
              * @return la raíz cuadrada del número
              * @throws IllegalArgumentException si el número es negativo
              */
-            Scanner leer = new Scanner(System.in);
             double numero = 0;
+            System.out.println("Dame un número positivo para hacer su raiz cuadrada");
+            Scanner leer = new Scanner(System.in);
+            numero = leer.nextDouble();
+
             if (numero < 0) {
                 throw new IllegalArgumentException("No se puede calcular la raíz de un número negativo");
             }
+            System.out.println("el resultado es : " + Math.sqrt(numero));
             return Math.sqrt(numero);
         }
 

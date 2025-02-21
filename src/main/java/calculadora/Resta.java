@@ -99,10 +99,10 @@ public class Resta {
      */
     public static int menu()    {
         int opcion;
-        System.out.println("1. calculadora.Resta de dos numeros reales");
-        System.out.println("2. calculadora.Resta de dos numeros enteros");
-        System.out.println("3. calculadora.Resta de tres numeros reales");
-        System.out.println("4. calculadora.Resta con valor acumulado");
+        System.out.println("1. Resta de dos numeros reales");
+        System.out.println("2. Resta de dos numeros enteros");
+        System.out.println("3. Resta de tres numeros reales");
+        System.out.println("4. Resta con valor acumulado");
         System.out.println("5. salir al menu principal");
 
 
@@ -234,11 +234,12 @@ public class Resta {
      * @return devuelve la resta acumulada
      */
     public static double restaAcumulada()  {
-
+        System.out.println("Método resta acumulada, pulsa 0 para salir");
         System.out.println("Dame un numero");
 
         double numeroLeido = leer.nextDouble();
         double restaAcumulada = numeroLeido;
+
 
         System.out.println("Dame otro numero");
         Scanner leer = new Scanner(System.in);
@@ -246,6 +247,7 @@ public class Resta {
 
         while (numeroLeido != 0) {
             restaAcumulada -= numeroLeido;
+            System.out.println("La resta por ahora es : " + restaAcumulada);
             System.out.println("Dame otro numero");
             numeroLeido = leer.nextDouble();
         }
