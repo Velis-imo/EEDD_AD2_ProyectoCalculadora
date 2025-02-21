@@ -34,7 +34,8 @@ public class Producto {
         opcion=0;
     }
 
-    /**calculadora.Producto de dos números reales, tendrá 2 parámetros de entrada y uno de salida que será la
+    /**
+     * Producto de dos números reales, tendrá 2 parámetros de entrada y uno de salida que será la
      *  solución
      * @param a es el primer número real
      * @param b es el segundo número real
@@ -42,11 +43,13 @@ public class Producto {
      */
 
         public static double productoReales(double a, double b){
+
             return  a * b;
         }
 
 
-    /**calculadora.Producto de dos números reales, tendrá 2 parámetros de entrada y uno de salida que será la
+    /**
+     * Producto de dos números reales, tendrá 2 parámetros de entrada y uno de salida que será la
      *  solución
      * @param d es el primer número entero
      * @param f es el segundo número entero
@@ -58,7 +61,8 @@ public class Producto {
 
             }
 
-    /**calculadora.Producto de dos números reales, tendrá 2 parámetros de entrada y uno de salida que será la
+    /**
+     * Producto de dos números reales, tendrá 2 parámetros de entrada y uno de salida que será la
      *  solución
      * @param a es el primer número real
      * @param b es el segundo número real
