@@ -6,6 +6,7 @@ import java.util.Scanner;
  * Esta clase contiene los siguientes métodos de suma de una calculadora:
  * suma de 2 enteros, suma de 2 reales, suma de 3 reales y suma acumulativa
  * @author Andrea Amado Lain (Github: Andrie42)
+ * Link del repositorio compartido: https://github.com/Velis-imo/EEDD_AD2_ProyectoCalculadora.git
  */
 public class Suma {
 
@@ -18,7 +19,7 @@ public class Suma {
      * @param b es el segundo número entero
      * @return devuelve la suma de ambos números
      */
-    public static int suma2enteros(int a, int b) {
+    public static int suma2Enteros(int a, int b) {
         return a + b;
     }
 
@@ -28,7 +29,7 @@ public class Suma {
      * @param b es el segundo número real
      * @return devuelve la suma de ambos
      */
-    public static double suma2reales(double a, double b) {
+    public static double suma2Reales(double a, double b) {
         return a + b;
     }
 
@@ -40,7 +41,7 @@ public class Suma {
      * @param c es el tercer número real
      * @return devuelve la suma de los tres
      */
-    public static double suma3reales(double a, double b, double c) {
+    public static double suma3Reales(double a, double b, double c) {
         return a + b + c;
     }
 
