@@ -41,7 +41,7 @@ public class Producto {
      * @return devuelve el producto de ambos números
      */
 
-        public static double productoreales(double a, double b){
+        public static double productoReales(double a, double b){
             return  a * b;
         }
 
@@ -53,7 +53,7 @@ public class Producto {
      * @return devuelve el producto de ambos números
      */
 
-        public static int productoentero(int d, int f) {
+        public static int productoEntero(int d, int f) {
                     return  d * f;
 
             }
@@ -66,7 +66,7 @@ public class Producto {
      * @return devuelve la solución del producto
      */
 
-        public static double productotres(double a, double b, double c) {
+        public static double productoTres(double a, double b, double c) {
             return a * b * c;
 
         }
@@ -119,7 +119,7 @@ public class Producto {
                     a = leer.nextDouble();
                     System.out.println("Dame el segundo número real: ");
                     b = leer.nextDouble();
-                    System.out.println("\nEl resultado es: " + Producto.productoreales(a, b) + "\n");
+                    System.out.println("\nEl resultado es: " + Producto.productoReales(a, b) + "\n");
                     Producto.productoMenu();
                 case 2:
                     //calculadora.Producto de dos números enteros
@@ -128,7 +128,7 @@ public class Producto {
                     d = leer.nextInt();
                     System.out.println("Dame el segundo número entero: ");
                     f = leer.nextInt();
-                    System.out.println("\nEl resultado es: " + Producto.productoentero(d, f) + "\n");
+                    System.out.println("\nEl resultado es: " + Producto.productoEntero(d, f) + "\n");
                     Producto.productoMenu();
                 case 3:
                     //calculadora.Producto de tres números reales
@@ -139,7 +139,7 @@ public class Producto {
                     b = leer.nextDouble();
                     System.out.println("Dame el tercer número real: ");
                     c = leer.nextDouble();
-                    System.out.println("\nEl resultado es: " + Producto.productotres(a, b, c)+"\n");
+                    System.out.println("\nEl resultado es: " + Producto.productoTres(a, b, c)+"\n");
                     Producto.productoMenu();
                 case 4:
                     //Potencia
