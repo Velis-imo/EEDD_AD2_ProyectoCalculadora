@@ -15,8 +15,7 @@ public class Division {
     private static double NumInverso;
     private static double numero;
     private static double resultado;
-    private static int divisorint;
-    private static int divisendoInt;
+
 
 
 
@@ -67,13 +66,13 @@ public class Division {
 
                     case 2: System.out.println("Dame dos numeros y los dividire, 0 para salir");
                         System.out.println("Escribe el valor de divisor");
-                        int divisorInt = leer.nextInt();
+                        int divisor = leer.nextInt();
                         System.out.println("Escribe el valor de dividendo");
-                        int dividendoInt = leer.nextInt();
-                        if (divisorint == 0) {
+                        int dividendo = leer.nextInt();
+                        if (divisor == 0) {
                             throw new ArithmeticException("El divisor no puede ser igual a 0");
                         } else {
-                            System.out.println("El resultado es: " + (divisorInt / dividendoInt));
+                            System.out.println("El resultado es: " + (divisor / dividendo));
                         }
 
                         break;
@@ -117,19 +116,20 @@ public class Division {
           * @return resultado de la división
           * @throws ArithmeticException si el divisor es 0
           */
-        public static double DivisionEnteros (double divisor, double dividendo) {
+        public static int DivisionEnteros (int divisor, int dividendo) {
             return divisor/dividendo;
         }
 
 
          /**
-         * Realiza la división de dos números enteros
-         * @param dividendo número entero a dividir
-         * @param divisor número entero que divide
-         * @return resultado de la división
-         * @throws ArithmeticException si el divisor es 0
-         */
-        public static int DivisionReales (int divisor,int dividendo){
+          * Realiza la división de dos números enteros
+          *
+          * @param dividendo número entero a dividir
+          * @param divisor   número entero que divide
+          * @return resultado de la división
+          * @throws ArithmeticException si el divisor es 0
+          */
+        public static double DivisionReales (double divisor, double dividendo){
             return divisor/dividendo;
         }
 
