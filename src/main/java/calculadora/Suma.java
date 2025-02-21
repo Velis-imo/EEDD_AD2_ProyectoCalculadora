@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class Suma {
 
     /** Scanner para leer los números a introducir por el usuario*/
-    private static final Scanner leer = new Scanner(System.in);
+    private static Scanner leer = new Scanner(System.in);
 
     /**
      * método para suma de 2 enteros
