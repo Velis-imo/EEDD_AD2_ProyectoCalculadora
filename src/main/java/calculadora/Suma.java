@@ -13,7 +13,7 @@ public class Suma {
     private static Scanner leer = new Scanner(System.in);
 
     /**
-     * método para suma de 2 enteros
+     * Metodo para suma de 2 enteros
      * @param a es el primer número entero
      * @param b es el segundo número entero
      * @return devuelve la suma de ambos números
@@ -23,7 +23,7 @@ public class Suma {
     }
 
     /**
-     * método para sumar 2 números reales
+     * Metodo para sumar 2 números reales
      * @param a es el primer número real
      * @param b es el segundo número real
      * @return devuelve la suma de ambos
@@ -33,7 +33,7 @@ public class Suma {
     }
 
     /**
-     * método que suma 3 números reales
+     * Metodo que suma 3 números reales
      *
      * @param a es el primer número real
      * @param b es el segundo número real
@@ -46,7 +46,7 @@ public class Suma {
 
 
     /**
-     * Método para hacer una suma acumulada.
+     * Metodo para hacer una suma acumulada.
      * Éste va sumando los números que recibe desde el
      * Scanner y los va sumando. Sale del bucle cuando se suma 0.
      *
@@ -67,7 +67,7 @@ public class Suma {
     }
 
     /**
-     * Método que escribe las diferentes opciones del menú.
+     * Metodo que escribe las diferentes opciones del menú.
      */
     public static void escribirMenu (){
         System.out.println("Elige una opcion:");
@@ -79,9 +79,9 @@ public class Suma {
     }
 
     /**
-     * Método que ejecuta el menú de la clase calculadora.Suma. Éste llama
-     * al método escribirmenu() para mostrar las opciones.
-     * Después, lee con Scanner la opción elegida y llama al método correspondiente.
+     * Metodo que ejecuta el menú de la clase calculadora. Este llama
+     * al metodo escribirmenu() para mostrar las opciones.
+     * Después, lee con Scanner la opción elegida y llama al metodo correspondiente.
      * Finalmente, se llama a sí mismo (llamada recursiva).
      * El bucle se termina cuando se selecciona la opción de salir.
      *
