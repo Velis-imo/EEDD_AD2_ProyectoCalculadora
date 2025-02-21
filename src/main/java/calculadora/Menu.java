@@ -41,6 +41,7 @@ import java.util.Scanner;
  * @author Velislav Krassenov
  * @author Andrea Amado
  * @author  David Pozo
+ * @author Michaej J. Telleria Guadalajara
  * @author Miduel del Castillo
  *
  * @version 1.0.
