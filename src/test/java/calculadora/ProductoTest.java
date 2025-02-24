@@ -2,7 +2,8 @@ package calculadora;
 
 import static org.junit.jupiter.api.Assertions.*;
 /**
- * Esta clase contiene los test de los métodos de la clase Producto.
+ * Esta clase contiene los test de los métodos de la clase Producto
+ * @see Producto
  * @author Andrea Amado Lain (Github: Andrie42)
  * <br><a href="https://github.com/Velis-imo/EEDD_AD2_ProyectoCalculadora.git">Link del repositorio compartido</a>
  */

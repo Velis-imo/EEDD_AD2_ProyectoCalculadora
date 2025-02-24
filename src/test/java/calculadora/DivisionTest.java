@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Esta clase contiene los test de los métodos de la clase División
+ * @see Division
  * @author David Pozo Plumed (Github Darknegan)
  * <br><a href="https://github.com/Velis-imo/EEDD_AD2_ProyectoCalculadora.git">Link del repositorio compartido</a>
  */

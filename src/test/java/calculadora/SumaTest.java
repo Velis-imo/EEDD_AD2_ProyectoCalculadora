@@ -1,4 +1,4 @@
-package java.calculadora;
+package calculadora;
 /**
  * Esta clase contiene los test de los métodos de la clase Suma.
  * @author Velislav Krassenoc (Github: Velis-imo)

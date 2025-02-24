@@ -10,6 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Esta clase contiene los test de los métodos de la clase Resta
+ * @see Resta
  * @author Michael jordan telleria guadalajara(MichaelJTG)
  * <br><a href="https://github.com/Velis-imo/EEDD_AD2_ProyectoCalculadora.git">Link del repositorio compartido</a>
  */
