@@ -1,1 +1,0 @@
-tagSearchIndex = [{"l":"Ejemplo de Uso","h":"class calculadora.Menu","d":"Section","u":"calculadora/Menu.html#ejemplo-de-uso-heading"}];updateSearchResults();

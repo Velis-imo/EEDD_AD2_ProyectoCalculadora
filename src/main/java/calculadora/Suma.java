@@ -3,9 +3,9 @@ package calculadora;
 import java.util.Scanner;
 
 /**
- * <p>Esta clase contiene los siguientes métodos de suma de una calculadora:
+ * Esta clase contiene los siguientes métodos de suma de una calculadora:
+ * Suma de 2 enteros, suma de 2 reales, suma de 3 reales y suma acumulativa.
  * @see Menu
- * suma de 2 enteros, suma de 2 reales, suma de 3 reales y suma acumulativa.</p>
  * @author Andrea Amado Lain (Github: Andrie42)
  * <br><a href="https://github.com/Velis-imo/EEDD_AD2_ProyectoCalculadora.git">Link del repositorio compartido</a>
  */

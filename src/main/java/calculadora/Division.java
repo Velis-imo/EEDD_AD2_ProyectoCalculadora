@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 /**
  *Esta clase contiene los siguientes métodos de calculadora. Division de una calculadora:
+ * Division de 2 Reales, calculadora. Division de 2 enteros, inverso de un número real y raiz cuadrada
  * @see Menu
- * Division de 2 Reales, calculadora. Division de 2 enteros, inverso de un número real y Raiz cuadrada
  * @author Michael jordan telleria guadalajara (MichaelJTG)
  * <br><a href="https://github.com/Velis-imo/EEDD_AD2_ProyectoCalculadora.git">Link del repositorio compartido</a>
  *
