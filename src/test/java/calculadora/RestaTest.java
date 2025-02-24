@@ -1,9 +1,5 @@
 package calculadora;
-/**
- * Esta clase contiene los test de los métodos de la clase Resta
- * @author Michael jordan telleria guadalajara(MichaelJTG)
- * <br><a href="https://github.com/Velis-imo/EEDD_AD2_ProyectoCalculadora.git">Link del repositorio compartido</a>
- */
+
 
 import calculadora.Resta;
 import org.junit.jupiter.api.BeforeEach;
@@ -11,6 +7,12 @@ import org.junit.jupiter.api.Test;
 
 
 import static org.junit.jupiter.api.Assertions.*;
+
+/**
+ * Esta clase contiene los test de los métodos de la clase Resta
+ * @author Michael jordan telleria guadalajara(MichaelJTG)
+ * <br><a href="https://github.com/Velis-imo/EEDD_AD2_ProyectoCalculadora.git">Link del repositorio compartido</a>
+ */
 
 class RestaTest {
 

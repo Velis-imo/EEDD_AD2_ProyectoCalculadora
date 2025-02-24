@@ -6,6 +6,8 @@ import java.util.Scanner;
  * Clase que implementa una calculadora especializada en operaciones de resta.
  * Proporciona diferentes funcionalidades para realizar operaciones de resta,
  * incluyendo números reales, enteros y operaciones acumulativas.
+ * <br><a href="https://github.com/Velis-imo/EEDD_AD2_ProyectoCalculadora.git">Link del repositorio compartido</a>
+ *
  *
  * <p>La clase ofrece las siguientes operaciones:</p>
  * <ul>
