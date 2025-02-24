@@ -5,6 +5,7 @@ import java.util.Scanner;
 /**
  * Esta clase contiene los siguientes métodos de producto de una calculadora:
  * producto de 2 enteros, producto de 2 reales, producto de 3 reales y cálculo de potencias
+ * @see Menu
  * @author David Pozo (Github Darknegan)
  * <br><a href="https://github.com/Velis-imo/EEDD_AD2_ProyectoCalculadora.git">Link del repositorio compartido</a>
  *

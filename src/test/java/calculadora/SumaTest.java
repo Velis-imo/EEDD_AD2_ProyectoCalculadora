@@ -1,6 +1,7 @@
 package calculadora;
 /**
  * Esta clase contiene los test de los métodos de la clase Suma.
+ * @see calculadora.Suma
  * @author Velislav Krassenoc (Github: Velis-imo)
  * <br><a href="https://github.com/Velis-imo/EEDD_AD2_ProyectoCalculadora.git">Link del repositorio compartido</a>
  */
