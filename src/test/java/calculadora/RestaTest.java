@@ -1,4 +1,4 @@
-package java.calculadora;
+package calculadora;
 /**
  * Esta clase contiene los test de los métodos de la clase Resta
  * @author Michael jordan telleria guadalajara(MichaelJTG)
@@ -78,7 +78,7 @@ class RestaTest {
         assertEquals(2,10-5-3,"resultado 2");
 
         Resta.restaTresReales();//Test de resta con resultado negativo
-        assertEquals(-2,10-5-4-3,"resultado -2 o peta");
+        assertEquals(-2,10-5-7,"resultado -2 o peta");
 
         Resta.restaTresReales();//Test de resta con resultado negativo en a
         assertEquals(-10,0-5-5,"resultado -10 o peta");
