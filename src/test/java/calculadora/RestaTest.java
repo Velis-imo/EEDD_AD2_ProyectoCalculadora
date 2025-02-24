@@ -27,16 +27,16 @@ class RestaTest {
      */
     @Test
     void restaReales() {
-        Resta.restaReales();//Test de resta con resultado positivo
+        Resta.restaReales(5,-2);//Test de resta con resultado positivo
         assertEquals(3,5-2,"resultado 3");
 
-        Resta.restaReales();//Test de resta con resultado negativo
+        Resta.restaReales(3,-5);//Test de resta con resultado negativo
         assertEquals(-2,3-5,"resultado -2 o peta");
 
-        Resta.restaReales();//Test de resta con resultado negativo en a
+        Resta.restaReales(0,-5);//Test de resta con resultado negativo en a
         assertEquals(-5,0-5,"resultado -5 o peta");
 
-        Resta.restaReales();//Test de resta con resultado negativo en b
+        Resta.restaReales(-5,0);//Test de resta con resultado negativo en b
         assertEquals(-5,-5-0,"resultado -5 o peta");
 
     }
@@ -51,16 +51,16 @@ class RestaTest {
 
     @Test
     void restaEnteros() {
-        Resta.restaEnteros();//Test de resta con resultado positivo
+        Resta.restaEnteros(5,-2);//Test de resta con resultado positivo
         assertEquals(3,5-2,"resultado 3");
 
-        Resta.restaEnteros();//Test de resta con resultado negativo
+        Resta.restaEnteros(3,-5);//Test de resta con resultado negativo
         assertEquals(-2,3-5,"resultado -2 o peta");
 
-        Resta.restaEnteros();//Test de resta con resultado negativo en a
+        Resta.restaEnteros(0,-5);//Test de resta con resultado negativo en a
         assertEquals(-5,0-5,"resultado -5 o peta");
 
-        Resta.restaEnteros();//Test de resta con resultado negativo en b
+        Resta.restaEnteros(-5,0);//Test de resta con resultado negativo en b
         assertEquals(-5,-5-0,"resultado -5 o peta");
 
     }
@@ -74,16 +74,16 @@ class RestaTest {
 
     @Test
     void restaTresReales() {
-        Resta.restaTresReales();//Test de resta con resultado positivo
+        Resta.restaTresReales(10,-5,-3);//Test de resta con resultado positivo
         assertEquals(2,10-5-3,"resultado 2");
 
-        Resta.restaTresReales();//Test de resta con resultado negativo
-        assertEquals(-2,10-5-7,"resultado -2 o peta");
+        Resta.restaTresReales(10,-5,-7);//Test de resta con resultado negativo
+        assertEquals(-2,10-5-7, "resultado -2 o peta");
 
-        Resta.restaTresReales();//Test de resta con resultado negativo en a
+        Resta.restaTresReales(0,-5,-5);//Test de resta con resultado negativo en a
         assertEquals(-10,0-5-5,"resultado -10 o peta");
 
-        Resta.restaTresReales();//Test de resta con resultado negativo en b
+        Resta.restaTresReales(-5,0,-5);//Test de resta con resultado negativo en b
         assertEquals(-10,-5-0-5,"resultado -10 o peta");
     }
     /**
@@ -96,16 +96,16 @@ class RestaTest {
 
     @Test
     void restaAcumulada() {
-        Resta.restaTresReales();//Test de resta con resultado positivo
+        Resta.restaAcumulada();//Test de resta con resultado positivo
         assertEquals(2,10-5-3,"resultado 2");
 
-        Resta.restaTresReales();//Test de resta con resultado negativo
-        assertEquals(-2,10-5-4-3,"resultado -2 o peta");
+        Resta.restaAcumulada();//Test de resta con resultado negativo
+        assertEquals(-2,10-5-7,"resultado -2 o peta");
 
-        Resta.restaTresReales();//Test de resta con resultado negativo en a
+        Resta.restaAcumulada();//Test de resta con resultado negativo en a
         assertEquals(-10,0-5-5,"resultado -10 o peta");
 
-        Resta.restaTresReales();//Test de resta con resultado negativo en b
+        Resta.restaAcumulada();//Test de resta con resultado negativo en b
         assertEquals(-10,-5-0-5,"resultado -10 o peta");
     }
 }
